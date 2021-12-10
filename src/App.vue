@@ -1,32 +1,46 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app" class="w-screen h-screen">
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  name: 'App',
+  components: {},
 }
+</script>
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style lang="scss">
+.bg-color-gray{
+  background-color: #F8F8F8;
+}
+.wrapper{
+    width: 1670px;
+    // background-color: #fff;
+    // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wrapper-content{
+    height: 750px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.pad{
+    width: 1670px;
+}
+.background{
+    background-color: #eeeeee;
+}
+.header-text{
+    color: #DF554C;
+}
+.date-text{
+    color: #676767;
+}
+.delete-btn{
+    font-weight: bold;  
+}
+.delete-btn:hover{
+    color: #DF554C;
 }
 </style>
